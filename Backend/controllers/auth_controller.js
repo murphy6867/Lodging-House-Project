@@ -1,7 +1,8 @@
 import User from "../models/user_model.js";
 import bcrpyt from "bcryptjs";
+import errorHandler from "../utils/error.js";
 
-const signUp = async (req, res) => {
+const signUp = async (req, res, next) => {
     const { username, email, password } = req.body;
 
     const hashedPassword = bcrpyt.hashSync(password, 10);
@@ -16,9 +17,8 @@ const signUp = async (req, res) => {
         })
 
     } catch (error) {
-        res.status(500).json(error.message);
+        next(error);
     }
- 
 };
 
 export default signUp
