@@ -4,3 +4,7 @@
  - jwt
  - redux
  - toolkit
+ - dotenv
+ - nodemon
+ - mongoose
+ - bcryptjs
