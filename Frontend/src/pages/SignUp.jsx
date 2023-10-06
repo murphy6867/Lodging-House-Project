@@ -32,16 +32,17 @@ function SignUp() {
       if (data.success === false) {
         setLoading(false);
         setError(data.message);
-        navigate('/sign-in');
         return;
       }
+      
       setLoading(false);
       setError(null);
+      navigate('/sign-in');
+
     } catch (error) {
       setLoading(false);
       setError(error.message);
     }
-    
   }
 
   return (
