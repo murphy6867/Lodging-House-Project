@@ -19,6 +19,7 @@ function SignUp() {
     e.preventDefault();
 
     try {
+      console.log(formData)
       setLoading(true);
       const request = await fetch('/api/auth/signup', {
         method: 'POST',
@@ -37,7 +38,7 @@ function SignUp() {
       
       setLoading(false);
       setError(null);
-      navigate('/sign-in');
+      // navigate('/sign-in');
 
     } catch (error) {
       setLoading(false);
