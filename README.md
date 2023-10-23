@@ -1,10 +1,10 @@
-# Real_Estate_Marketplace Project
+# Lodging House Project
 ## Tools
  - MERN Stack
  - jwt
- - redux
- - toolkit
+ - redux toolkit
  - dotenv
  - nodemon
  - mongoose
  - bcryptjs
+ - firebase
