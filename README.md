@@ -8,3 +8,4 @@
  - mongoose
  - bcryptjs
  - firebase
+ - create private route
